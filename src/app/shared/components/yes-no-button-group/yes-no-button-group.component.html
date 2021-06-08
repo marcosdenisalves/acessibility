@@ -1,0 +1,19 @@
+<div class="button-group">
+  <label> {{ label }}</label>
+  <button
+    [class.button-pressed]="value === options.YES"
+    (click)="activate(options.YES)"
+    class="button button-yes"
+    type="button"
+  >
+    Yes
+  </button>
+  <button
+    [class.button-pressed]="value === options.NO"
+    (click)="activate(options.NO)"
+    class="button button-no"
+    type="button"
+  >
+    No
+  </button>
+</div>
